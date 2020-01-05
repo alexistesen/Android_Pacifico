@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:text="Búsqueda PACIFICO" />
+
+    <TextView
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:text="Selecciona e ingresa lo buscado:"
+        />
+
+    <RadioGroup
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+        android:id="@+id/rBtnCodAf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Código de Afiliado"/>
+
+        <RadioButton
+        android:id="@+id/rBtnDniAf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DNI de Afiliado"/>
+
+        <RadioButton
+        android:id="@+id/rBtnNomAf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombres y/o Apellidos de Afiliado"/>
+
+    </RadioGroup>
+
+
+    <EditText
+        android:layout_marginBottom="20dp"
+        android:id="@+id/etParametro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="¿Que Buscas?"
+        />
+
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="BUSCAR"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
